@@ -198,8 +198,24 @@
     src="./arrow.svg"
     alt="Knop met pijl naar volgende video"
     />
-    Previous
     </button>
+
+    <button onclick="playPrevious()">
+  <svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M41 0L76.507 20.5V61.5L41 82L5.49296 61.5V20.5L41 0Z" fill="#FEB51E"/>
+    <path d="M56.7012 46.4337L56.7012 51.8895L41.3507 60.8527L26.0002 51.8895L26.0002 46.4337L41.3507 55.3968L56.7012 46.4337Z" fill="white"/>
+    <path d="M56.7012 35.7169L56.7012 41.1727L41.3507 50.1358L26.0002 41.1727L26.0002 35.7169L41.3507 44.68L56.7012 35.7169Z" fill="white"/>
+    <path d="M56.7012 25L56.7012 30.4559L41.3507 39.419L26.0002 30.4559L26.0002 25L41.3507 33.9632L56.7012 25Z" fill="white"/>
+  </svg>
+</button>
+
+
+    <!-- <svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M41 0L76.507 20.5V61.5L41 82L5.49296 61.5V20.5L41 0Z" fill="#FEB51E"/>
+<path d="M56.7012 46.4337L56.7012 51.8895L41.3507 60.8527L26.0002 51.8895L26.0002 46.4337L41.3507 55.3968L56.7012 46.4337Z" fill="white"/>
+<path d="M56.7012 35.7169L56.7012 41.1727L41.3507 50.1358L26.0002 41.1727L26.0002 35.7169L41.3507 44.68L56.7012 35.7169Z" fill="white"/>
+<path d="M56.7012 25L56.7012 30.4559L41.3507 39.419L26.0002 30.4559L26.0002 25L41.3507 33.9632L56.7012 25Z" fill="white"/>
+</svg> -->
 
     <iframe class="video-iframe" src={videos[currentVideoIndex]} allowfullscreen />
     
@@ -209,7 +225,7 @@
     src="./arrow.svg"
     alt="Knop met pijl naar volgende video"
     />
-     Next
+
     </button>
     </aside>
     
@@ -217,7 +233,6 @@
 
   </section>
 </main>
-
 
 
 
@@ -253,6 +268,9 @@
     --vtRed-50: #fba795;
     --vtRed-30: #fdc4b9;
     --vtRed-10: #fee2dc;
+
+    --vtPrimaryFont: "rigid-square", sans-serif;
+    --vtSecondaryFont: "yrsa", serif;
   }
 
   /* Iframe styling */
@@ -279,7 +297,9 @@
   }
 
   button:hover {
-    background-color: #feb51f;
+    border-radius: 5px;
+    
+    
   }
 
   .right-arrow {
@@ -300,6 +320,8 @@
     line-height: 1.5rem;
     margin-left: 3em;
     margin-right: 3em;
+    font-family: var(--vtPrimaryFont);
+
   }
 
   /* Headers */
@@ -312,7 +334,7 @@
 
   h2 {
     font-size: 2rem;
-    font-family: var(--vtSecondaryFont);
+    font-family: var(--vtPrimaryFont);
     line-height: 1.5rem;
     color: var(--vtDarkBlue);
     margin-left: 1.5em;
@@ -345,4 +367,6 @@
     font-family: var(--vtSecondaryFont);
     line-height: 1.5rem;
   }
+
+   
 </style>
