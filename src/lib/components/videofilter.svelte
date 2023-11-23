@@ -266,20 +266,21 @@
     height: 315px;
   }
 
-.video-iframe iframe {
+/* .video-iframe iframe {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
 
 @media only screen and (max-width: 480px) {
   /* Adjust styles for screens smaller than 480px (typical mobile sizes, including iPhone 13) */
   .video-iframe {
     margin-bottom: 0.5em;
     margin-top: 1em;
-    width: 100%;
+    width: 300px;
+    height: 200px;
   }
 }
 
