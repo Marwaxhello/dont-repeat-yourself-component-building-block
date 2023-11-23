@@ -266,29 +266,26 @@
     height: 315px;
   }
 
-/* .video-iframe iframe {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
-
-@media only screen and (max-width: 480px) {
-  /* Adjust styles for screens smaller than 480px (typical mobile sizes, including iPhone 13) */
-  .video-iframe {
-    margin-bottom: 0.5em;
-    margin-top: 1em;
-    width: 300px;
-    height: 200px;
-  }
-}
-
   aside {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
+  @media only screen and (max-width: 480px) {
+  /* Adjust styles for screens smaller than 480px (typical mobile sizes, including iPhone 13) */
+  .video-iframe {
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+    width: 250px;
+    height: 141px;
+  }
+
+  .aside{
+    background-color: #090940;
+  }
+}
+
 
   /* Arrow buttons */
 
@@ -312,6 +309,22 @@
     margin-right: 1em;
     transform: rotate(90deg);
   }
+
+
+  @media only screen and (max-width: 480px) {
+  /* Adjust styles for screens smaller than 480px (typical mobile sizes, including iPhone 13) */
+  .right-arrow {
+    width: 50px;
+    height: 50px;
+    margin-left: 0%;
+  }
+
+  .left-arrow {
+    width: 50px;
+    height: 50px;
+    margin-right: 0%;
+  }
+}
 
   /* Kennisclip teksten */
 
