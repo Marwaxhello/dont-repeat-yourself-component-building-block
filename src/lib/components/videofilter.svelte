@@ -170,6 +170,7 @@
  
   ];
 
+
   function playPrevious() {
     if (currentVideoIndex > 0) {
       currentVideoIndex -= 1;
@@ -182,6 +183,7 @@
     }
   }
 
+    
 </script>
 
 
@@ -281,9 +283,6 @@
     height: 141px;
   }
 
-  .aside{
-    background-color: #090940;
-  }
 }
 
 
@@ -334,6 +333,7 @@
     line-height: 1.5rem;
     margin-left: 3em;
     margin-right: 3em;
+    font-size: 20px;
     font-family: var(--vtPrimaryFont);
 
   }
